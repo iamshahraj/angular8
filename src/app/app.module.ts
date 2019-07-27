@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FormsModule } from "@angular/forms";
+
 import { HeaderComponent } from './components/header/header.component';
 
 import { RecipesComponent } from './views/recipes/recipes.component';
@@ -26,7 +28,8 @@ import { ShoppingEditComponent } from './views/shopping-list/shopping-edit/shopp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
