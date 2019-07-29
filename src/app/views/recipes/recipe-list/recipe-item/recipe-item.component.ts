@@ -8,15 +8,10 @@ import { Recipe } from 'src/app/shared/recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
-  @Output() recipeSelected = new EventEmitter<void>();
+  @Input() id: number;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  onSelected() {
-    this.recipeSelected.emit()
-  }
-
 }
